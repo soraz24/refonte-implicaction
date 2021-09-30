@@ -13,7 +13,7 @@ jobs:
     name: My first job
     runs-on: ubuntu-latest
     steps:
-      - id: Print the input name to STDOUT
+      - name: Print the input name to STDOUT
         run: echo Hello World
   my_second_job:
     name: My second job
