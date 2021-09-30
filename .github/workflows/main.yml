@@ -28,7 +28,7 @@ jobs:
       # - name: Running unit tests
       #   run: npm test
       - name: Build
-        run: npm build
+        run: npm run build
 
   back:
     name: Backend workflow
