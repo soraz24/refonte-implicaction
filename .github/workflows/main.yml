@@ -1,0 +1,23 @@
+name: My Workflow
+
+on:
+  push:
+    branches:
+    - workflow
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  my_first_job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print the input name to STDOUT
+      run: echo Hello World
+ my_second_job:
+    name: My second job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print hello world on "second-job"
+      run: echo Hello World
