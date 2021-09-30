@@ -25,10 +25,10 @@ jobs:
           node-version: '14.x'
       - name: Install dependencies
         run: npm install
-      - name: Running unit tests
-        run: npm test
-      - name: Running end-to-end tests
-        run: npm e2e
+      # - name: Running unit tests
+      #   run: npm test
+      - name: Build
+        run: npm build
 
   back:
     name: Backend workflow
