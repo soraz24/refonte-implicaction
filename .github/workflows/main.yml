@@ -33,7 +33,7 @@ jobs:
         with:
           context: frontend-implicaction
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME}}/${{github.repository}}-front:latest
+          tags: ${{ secrets.DOCKER_USERNAME}}/dyno-nuggets-front:latest
 
   back:
     name: Backend workflow
