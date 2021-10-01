@@ -33,7 +33,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME}}/$GITHUB_REPOSITORY-front:latest
+          tags: ${{ secrets.DOCKER_USERNAME}}/${{GITHUB_REPOSITORY}}-front:latest
 
   back:
     name: Backend workflow
