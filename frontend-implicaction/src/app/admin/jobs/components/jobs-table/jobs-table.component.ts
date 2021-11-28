@@ -72,24 +72,6 @@ export class JobsTableComponent extends BaseWithPaginationComponent<JobPosting, 
     this.filterService.criteria = this.criteria;
   }
 
-  protected innerPaginate(): void {
-    this.jobService
-      .getAllByCriteria(this.pageable, this.criteria)
-      .pipe(
-        take(1),
-        finalize(() => this.loading = false)
-      )
-      .subscribe(
-        data => {
-          this.pageable.totalPages = data.totalPages;
-          this.pageable.rows = data.size;
-          this.pageable.totalElements = data.totalElements;
-          this.pageable.content = data.content;
-        },
-        () => this.toastService.error('Oops', 'Une erreur est survenue lors de la récupération des données'),
-      );
-  }
-
   editJob(job: JobPosting): void {
     this.sidebarService
       .open({
@@ -107,6 +89,24 @@ export class JobsTableComponent extends BaseWithPaginationComponent<JobPosting, 
         () => this.paginate(),
         () => this.toastService.error('Oops', 'Une erreur est survenue'),
         () => this.toastService.success('Succès', job.archive ? 'Offre désarchivée' : `Offre archivée`)
+      );
+  }
+
+  protected innerPaginate(): void {
+    this.jobService
+      .getAllByCriteria(this.pageable, this.criteria)
+      .pipe(
+        take(1),
+        finalize(() => this.loading = false)
+      )
+      .subscribe(
+        data => {
+          this.pageable.totalPages = data.totalPages;
+          this.pageable.rows = data.size;
+          this.pageable.totalElements = data.totalElements;
+          this.pageable.content = data.content;
+        },
+        () => this.toastService.error('Oops', 'Une erreur est survenue lors de la récupération des données'),
       );
   }
 

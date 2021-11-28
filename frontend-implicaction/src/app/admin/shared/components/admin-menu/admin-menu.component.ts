@@ -44,6 +44,11 @@ export class AdminMenuComponent implements OnInit {
       link: `/${Univers.ADMIN.url}/companies`,
       classIcon: 'pi pi-id-card',
       roles: [RoleEnumCode.ADMIN]
+    }, {
+      label: 'Publications',
+      link: `/${Univers.ADMIN.url}/post`,
+      classIcon: 'pi pi-id-card',
+      roles: [RoleEnumCode.ADMIN]
     },
   ];
 

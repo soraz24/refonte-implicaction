@@ -56,6 +56,15 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: 'post', component: AdminComponent, children: [
+      {
+        path: '',
+        loadChildren: () => import('./post/post.module').then(m => m.PostModule),
+        outlet: 'admin-content'
+      }
+    ]
+  },
 ];
 
 @NgModule({
