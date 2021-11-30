@@ -1,17 +1,17 @@
 import {Component} from '@angular/core';
-import {PostService} from '../../../discussion/services/post.service';
-import {ToasterService} from '../../../core/services/toaster.service';
+import {PostService} from '../../../../discussion/services/post.service';
+import {ToasterService} from '../../../../core/services/toaster.service';
 import {finalize, take} from 'rxjs/operators';
-import {Pageable} from '../../../shared/models/pageable';
-import {Constants} from '../../../config/constants';
-import {Post} from '../../../discussion/model/post';
+import {Pageable} from '../../../../shared/models/pageable';
+import {Constants} from '../../../../config/constants';
+import {Post} from '../../../../discussion/model/post';
 
 @Component({
-  selector: 'app-post-table',
-  templateUrl: './post-table.component.html',
-  styleUrls: ['./post-table.component.scss']
+  selector: 'app-posts-table',
+  templateUrl: './posts-table.component.html',
+  styleUrls: ['./posts-table.component.scss']
 })
-export class PostTableComponent {
+export class PostsTableComponent {
 
   loading = true; // indique si les données sont en chargement
   // Ne pas oublier de retirer du tableau la valeur 'all' utilisée

@@ -57,10 +57,10 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'post', component: AdminComponent, children: [
+    path: 'posts', component: AdminComponent, children: [
       {
         path: '',
-        loadChildren: () => import('./post/post.module').then(m => m.PostModule),
+        loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule),
         outlet: 'admin-content'
       }
     ]

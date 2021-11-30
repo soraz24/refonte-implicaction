@@ -8,15 +8,12 @@ import {CompaniesComponent} from './companies/companies.component';
 import {TableModule} from 'primeng/table';
 import {CompaniesModule} from './companies/companies.module';
 import {FeatherModule} from 'angular-feather';
-import {PostComponent} from './post/post.component';
-import {PostModule} from './post/post.module';
 
 
 @NgModule({
   declarations: [
     AdminComponent,
     CompaniesComponent,
-    PostComponent,
   ],
   imports: [
     CommonModule,
@@ -25,7 +22,6 @@ import {PostModule} from './post/post.module';
     TableModule,
     CompaniesModule,
     FeatherModule,
-    PostModule
   ],
   providers: [{provide: LOCALE_ID, useValue: 'fr'}],
 })
