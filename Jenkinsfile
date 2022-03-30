@@ -12,6 +12,11 @@ pipeline {
 								sh 'docker-compose up'
 						}
 				}
+				stage('docker-compose'){
+						steps{
+								sh 'sudo docker-compose up'
+						}
+				}
 				stage('Build') {
 						steps {
 								dir("/home/diallo/workspace/Qualite") {
