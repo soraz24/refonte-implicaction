@@ -13,11 +13,7 @@
         <div class="divider d-flex align-items-center my-4">
           <p class="text-center mx-3 mb-0 fs-2">Connexion</p>
         </div>
-        <form
-          (ngSubmit)="login()"
-          [formGroup]="loginForm"
-        >
-
+        <form (ngSubmit)="login()" [formGroup]="loginForm">
           <!-- USERNAME -->
           <div class="form-floating mb-4">
             <input
@@ -28,10 +24,7 @@
               placeholder="Enter a valid email address"
               required
             />
-            <label
-              class="form-label"
-              for="floatingUsername"
-            >
+            <label class="form-label" for="floatingUsername">
               Nom d'utilisateur
             </label>
           </div>
@@ -46,17 +39,13 @@
               required
               type="password"
             />
-            <label
-              class="form-label"
-              for="floatingPassword"
-            >
+            <label class="form-label" for="floatingPassword">
               Mot de passe
             </label>
           </div>
 
           <!-- OPTIONS -->
           <div class="d-flex justify-content-between align-items-center">
-
             <!-- REMEMBER ME -->
             <div class="form-check mb-0">
               <input
@@ -64,26 +53,18 @@
                 id="rememberMe"
                 type="checkbox"
               />
-              <label
-                class="form-check-label"
-                for="rememberMe"
-              >
+              <label class="form-check-label" for="rememberMe">
                 Se souvenir de moi
               </label>
             </div>
 
             <!-- FORGOT PASSWORD -->
-            <a
-              class="text-body"
-              href="#"
-            >
-              J'ai oublié mon mot de passe
-            </a>
+            <a class="text-body" href="#"> J'ai oublié mon mot de passe </a>
           </div>
 
           <!-- SUBMIT -->
           <div class="text-center text-lg-start mt-4 pt-2">
-            <div class="d-grid gap-2 ">
+            <div class="d-grid gap-2">
               <button
                 [disabled]="isLoading"
                 class="btn btn-primary btn-lg"
@@ -100,7 +81,10 @@
               </button>
             </div>
             <p class="small fw-bold mt-2 pt-1 mb-0">
-              Pas encore membre ? <a class="link-danger" routerLink="/auth/sign-up">S'inscrire</a>
+              Pas encore membre ?
+              <a class="link-danger" routerLink="/auth/sign-up" id="inscription"
+                >S'inscrire</a
+              >
             </p>
           </div>
         </form>
