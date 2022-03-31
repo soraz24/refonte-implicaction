@@ -9,6 +9,7 @@ pipeline {
 						steps{
 								sh 'pwd '
 								sh 'ls '
+								sh 'cat docker-compose.yml'
 						}
 				}
 				stage('Build') {
