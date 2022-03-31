@@ -13,7 +13,7 @@ pipeline {
 				}
 				stage('docker-compose'){
 						steps{
-								sh 'mvn spring-boot:run -Dspring-boot.run.profiles=local'
+								sh '/usr/bin/docker-compose up'
 						}
 				}
 				stage('Build') {
