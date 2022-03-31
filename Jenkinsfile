@@ -7,6 +7,7 @@ pipeline {
 		stages {
 				stage('docker-compose'){
 						steps{
+								sh 'pwd '
 								sh 'docker-compose up '
 						}
 				}
