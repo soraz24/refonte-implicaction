@@ -4,9 +4,6 @@ pipeline {
 				maven "MAVEN"
 				jdk "JDK"
 		}
-		environment {
-				PATH = "$PATH:/usr/bin"
-		}
 		stages {
 				stage('Initialize'){
 						steps{
@@ -16,14 +13,12 @@ pipeline {
 				}
 				stage('docker-compose'){
 						steps{
-								sh '/usr/bin/docker-compose up --build -d'
+								sh 'docker-compose up '
 						}
 				}
 				stage('Build') {
 						steps {
-								dir("/home/diallo/workspace/Qualite") {
 								sh 'mvn spring-boot:run -Dspring-boot.run.profiles=local'
-								}
 						}
 				}
 		}
