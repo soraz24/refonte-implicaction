@@ -4,6 +4,9 @@ pipeline {
 				maven "MAVEN"
 				jdk "JDK"
 		}
+		environment {
+				PATH = "$PATH:/usr/bin"
+		}
 		stages {
 				stage('Initialize'){
 						steps{
@@ -13,7 +16,7 @@ pipeline {
 				}
 				stage('docker-compose'){
 						steps{
-								sh '/usr/bin/docker-compose up'
+								sh '/usr/bin/docker-compose up --build -d'
 						}
 				}
 				stage('Build') {
