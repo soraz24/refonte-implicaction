@@ -9,12 +9,11 @@ pipeline {
 						steps{
 								echo "PATH = ${M2_HOME}/bin:${PATH}"
 								echo "M2_HOME = /opt/maven"
-								sh 'docker-compose up'
 						}
 				}
 				stage('docker-compose'){
 						steps{
-								sh 'sudo docker-compose up'
+								sh 'mvn spring-boot:run -Dspring-boot.run.profiles=local'
 						}
 				}
 				stage('Build') {
