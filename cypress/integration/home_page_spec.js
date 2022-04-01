@@ -4,7 +4,7 @@
     })
   })*/
 
-  describe('My First Test', () => {
+  describe('Test Cypress Accueil', () => {
     it('Visits the initial project page', () => {
       cy.visit('/');
       cy.contains('Accueil');
