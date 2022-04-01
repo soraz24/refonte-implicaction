@@ -1,4 +1,10 @@
-Partie Sonar
+PARTIE SONARQUEBE
+Cette partie nous permet d'illustrer la qualité du Code du projet Refonte-Implication ainsi les problèmes rencontrés lors de l'exécution du logiciel.
+Pour effectuer les tests avec SonarQuebe, nous avons débuté avec le téléchargement et l'installation de la dernière version des logiciels suivants:
+- JDK 11
+- Sonarquebe
+Problèmes Rencontrés
+Conclusion
 Partie Cypress
 
 Cypress permet de vérifier que l’application fonctionne correctement et ainsi garantir la meilleure expérience utilisateur possible.
