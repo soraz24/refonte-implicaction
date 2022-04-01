@@ -4,7 +4,7 @@
   "description": "* [java](https://java.com/fr/download/help/download_options.html) (v11)\r * [node](https://nodejs.org/en/) (14 ou supérieure)\r * [docker](https://docs.docker.com/engine/install/) (v17.09 min) pour les tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,5 @@
   "homepage": "https://github.com/soraz24/refonte-implicaction#readme",
   "devDependencies": {
     "cypress": "^9.5.3"
-  },
-  
-   "scripts": {
-    "cypress:open": "cypress open"
   }
 }

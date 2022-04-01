@@ -1,1 +1,8 @@
-{"baseUrl":"http://localhost:8080/"}
+{
+  "baseUrl": "http://localhost:8081/",
+  "reporterOptions": {
+    "mochaFile": "results/TEST-demo.xml",
+    "toConsole": true,
+    "chromeWebSecurity": false
+  }
+}
