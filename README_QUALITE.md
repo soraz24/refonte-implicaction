@@ -53,5 +53,14 @@ on y ajoute notre url :
 il suffit ensuite de créer nos fichier de tests dans le dossier de Cypress cypress/integration
 
 PARTIE JENKINS
-
+Jenkins est un outil logiciel open source d’intégration continue développé en Java. Après une présentation du concept d’intégration continue, découvrez à quoi sert Jenkins, quels sont ses avantages et ses différences avec les autres outils similaires, ainsi que son fonctionnement. 
+Configuration
+Fichier: Jenkinsfile
+Pluguin: maven integration, github integration, nodejs
+AVANTAGE
+- Outil open source
+- Serveur d'automatisation robuste et facile à déployer. Rend possible mes flux d'automatisation des tests avec peu d'efforts et sans frais d'abonnement.
+- Nous apprécions surtout le fait qu'il s'agisse d'un logiciel open source bénéficiant d'un énorme soutien communautaire. Nous utilisons des plugins Jenkins pour déployer nos applications sur Azure, GCP et même Oracle Cloud. Il existe des plugins pour presque tous les outils utilisés. J'aime beaucoup le fait que vous pouvez exécuter des pipelines entièrement automatisés, planifiés ou exécutés avec des paramètres pour modifier les résultats en créant des scripts de type modèle.
+INCONVENIENTS
+- 
 PARTIE K6
