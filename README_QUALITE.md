@@ -47,5 +47,6 @@ on y ajoute notre url :
 
 il suffit ensuite de créer nos fichier de tests dans le dossier de Cypress cypress/integration
 
-Partie Jenkins
-Partie K6
+PARTIE JENKINS
+
+PARTIE K6
