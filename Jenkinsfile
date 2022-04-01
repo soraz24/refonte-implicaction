@@ -15,16 +15,24 @@ pipeline {
 				}
 				stage('Build') {
 						steps {
-								sh 'mvn spring-boot:run -Dspring-boot.run.profiles=local'
+								sh 'mvn -B -DskipTests clean package'
+						}
+				}
+				stage('Test') { 
+						steps {
+								sh 'export TESTCONTAINERS_RYUK_DISABLED=true' 
+								sh'mvn test -Dspring.profiles.active=test -Dtest=WorkExperienceAdapterTest -DfailIfNoTests=false'
+						}
+						post {
+							 always {
+										junit 'target/surefire-reports/*.xml' 
+							}
+						}
+				}
+				stage('Deliver') {
+						steps {
+								sh 'echo deliver'
 						}
 				}
 		}
-		post {
-			always {
-					junit(
-				allowEmptyResults: true,
-				testResults: '*/test-reports/.xml'
-			)
-			}
-		} 
 }
