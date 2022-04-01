@@ -5,14 +5,7 @@ pipeline {
 				jdk "JDK"
 		}
 		stages {
-				stage('docker-compose'){
-						steps{
-								sh 'pwd '
-								sh 'ls '
-								sh 'cat docker-compose.yml'
-								sh 'docker-compose up'
-						}
-				}
+				
 				stage('Build') {
 						steps {
 								sh 'mvn -B -DskipTests clean package'
@@ -29,10 +22,6 @@ pipeline {
 							}
 						}
 				}
-				stage('Deliver') {
-						steps {
-								sh 'echo deliver'
-						}
-				}
+				
 		}
 }
