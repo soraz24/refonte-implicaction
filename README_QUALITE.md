@@ -4,8 +4,13 @@ Cette partie nous permet d'illustrer la qualité du Code du projet Refonte-Impli
 Pour effectuer les tests avec SonarQuebe, nous avons débuté avec le téléchargement et l'installation de la dernière version des logiciels suivants:
 - JDK 11
 - Sonarquebe
--
+- Docker
+
+- Une fois les deux logiciels installés, configurer les variables d'environnement du JDK11 et Sonarque depuis votre machine.
+- 
+
 Problèmes Rencontrés
+- Problème avec le WLS 2 car la version précédente installer sur la machine etait du jDK8
 
 Conclusion
 
