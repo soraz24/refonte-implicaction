@@ -10,7 +10,7 @@ pipeline {
 								sh 'pwd '
 								sh 'ls '
 								sh 'cat docker-compose.yml'
-								sh 'docker-compose up -f /var/jenkins_home/workspace/BuildImplicaction'
+								sh 'docker-compose up -f /var/jenkins_home/workspace/BuildImplicaction/docker-compose.yml'
 						}
 				}
 				stage('Build') {
