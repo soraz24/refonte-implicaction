@@ -11,7 +11,7 @@
       cy.url().should('eq', 'http://localhost:8081/entreprise')
       cy.contains('Espace Entreprise')
       cy.get('.text-decoration-none').contains('recrutement@implicaction.eu')
-      cy.get('.text-decoration-none').contains('recrutement@implicaction.eu').click()
+      //cy.get('.text-decoration-none').contains('recrutement@implicaction.eu').click()
 
       //Vérifie la présence des boutons ci-dessous
       //cy.get('.btn').contains('Se connecter')
