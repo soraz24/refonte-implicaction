@@ -1,18 +1,43 @@
-PARTIE SONARQUEBE
+PARTIE I: SONARQUEBE
 
-Cette partie nous permet d'illustrer la qualité du Code du projet Refonte-Implication ainsi les problèmes rencontrés lors de l'exécution du logiciel.
-Pour effectuer les tests avec SonarQuebe, nous avons débuté avec le téléchargement et l'installation de la dernière version des logiciels suivants:
-- JDK 11
-- Sonarquebe
-- Docker
+SonarQube est un outil d’analyse statique qui a pour but de mesurer la qualité du code d’un applicatif. Pour un projet donné, il fournit des métriques portant sur la qualité du code et permet d’identifier précisément les points à corriger (code mort, bugs potentiels, non-respect des standards, manque ou surcharge de commentaires…) 
+SonarQube classe les défauts logiciels selon 3 catégories :
+•	Les bugs : anomalies évidentes du code. Ils impactent la fiabilité (reliability) de l’application.
+•	Les vulnérabilités : faiblesses du code pouvant nuire au système. Elles impactent la sécurité de l’application.
+•	Les « code smells » (mauvaises pratiques de conception logicielle qui conduisent à l’apparition de défauts). Ils impactent la maintenabilité de l’application.
 
-- Une fois les deux logiciels installés, configurer les variables d'environnement du JDK11 et Sonarque depuis votre machine.
-- 
+Pour la qualité du code projet Refonte-Implication, nous avons utilisé Sonarquebe sous windows. Dans cette partie, sera decrite les avantages, inconvenients et difficultés rencontrés lors du test ainsi que le coût s'il faut l'utiliser.
 
-Problèmes Rencontrés
-- Problème avec le WLS 2 car la version précédente installer sur la machine etait du jDK8
+Prerequis
+1°) Installation des logiciels suivant:
+     - JDK 11
+     - Sonarquebe (suivre la documentation officièlle sur https://docs.sonarqube.org/latest/ ou https://www.troispointzero.fr/le-blog/sonarqube/)
+     - Docker
 
-Conclusion
+2°) Une fois les deux logiciels installés, configurer les variables d'environnement du JDK11 et Sonarque depuis votre machine et suivre les instructions lors de l'installation ainsi que la docummentation
+
+
+Problèmes Rencontrés lors de l'installation et exécution:
+- Problème avec le WLS 2 car la version précédente installer sur la machine sous windows11 avait du jDK8 et non le JDK11
+- L'exécution de la qualité du code avec Sonarquebe depuis github, nous a demandé le lien d'un organisme enregistré chez github (soit, le lien d'une entrzprise et non d'un comptte personnel github).
+
+Avantage:
+- SonarQube est un logiciel en mode SAAS (software as a service) : il est donc supporté par tous les systèmes d’exploitation (Windows, Mac, OS Mobiles …) car il est accessible depuis un navigateur web Internet (comme Chrome ou Firefox)
+-  Il est compatible actuellement avec 29 langages de programmation.
+-  SonarQube peut se connecter à d’autres logiciels comme :Bitbucket, Apache Maven, Jenkins, Travis CI etc..
+
+
+Coût
+Le tarif de SonarQube est de 0 euros par mois et par utilisateur (ce prix peut évoluer en fonction du nombre d’utilisateurs, d’options activées …)
+•	Voici les différents prix de SonarQube:
+   	– Essai gratuit
+    – Standard : 0,00 euros par utilisateur et par mois
+    – Professionnel : –
+    – Business : –
+    – Entreprise : –
+	Les éditeurs de logiciels proposent souvent des réductions en fonction du nombre de licences utilisateurs, ce qui permet de réaliser des économies de 5 à 25%. Les versions d’essai sont par ailleurs souvent limitées dans le temps / dans leurs fonctionnalités.
+
+Conclusion: Les tests ont été effectués depuis Sonarquebe cloud.
 
 PARTIE CYPRESS
 
