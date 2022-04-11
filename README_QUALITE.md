@@ -9,6 +9,7 @@ SonarQube classe les défauts logiciels selon 3 catégories :
 Pour la qualité du code projet Refonte-Implication, nous avons utilisé Sonarquebe sous windows. Dans cette partie, sera decrite les avantages, inconvenients et difficultés rencontrés lors du test ainsi que le coût s'il faut l'utiliser.
 
 Prerequis
+
 1°) Installation des logiciels suivant:
      - JDK 11
      - Sonarquebe (suivre la documentation officièlle sur https://docs.sonarqube.org/latest/ ou https://www.troispointzero.fr/le-blog/sonarqube/)
@@ -18,16 +19,19 @@ Prerequis
 
 
 Problèmes Rencontrés lors de l'installation et exécution:
+
 - Problème avec le WLS 2 car la version précédente installer sur la machine sous windows11 avait du jDK8 et non le JDK11
 - L'exécution de la qualité du code avec Sonarquebe depuis github, nous a demandé le lien d'un organisme enregistré chez github (soit, le lien d'une entrzprise et non d'un comptte personnel github).
 
 Avantage:
+
 - SonarQube est un logiciel en mode SAAS (software as a service) : il est donc supporté par tous les systèmes d’exploitation (Windows, Mac, OS Mobiles …) car il est accessible depuis un navigateur web Internet (comme Chrome ou Firefox)
 -  Il est compatible actuellement avec 29 langages de programmation.
 -  SonarQube peut se connecter à d’autres logiciels comme :Bitbucket, Apache Maven, Jenkins, Travis CI etc..
 
 
-Coût
+Coût:
+
 Le tarif de SonarQube est de 0 euros par mois et par utilisateur (ce prix peut évoluer en fonction du nombre d’utilisateurs, d’options activées …)
 •	Voici les différents prix de SonarQube:
    	– Essai gratuit
@@ -35,9 +39,12 @@ Le tarif de SonarQube est de 0 euros par mois et par utilisateur (ce prix peut �
     – Professionnel : –
     – Business : –
     – Entreprise : –
-	Les éditeurs de logiciels proposent souvent des réductions en fonction du nombre de licences utilisateurs, ce qui permet de réaliser des économies de 5 à 25%. Les versions d’essai sont par ailleurs souvent limitées dans le temps / dans leurs fonctionnalités.
+Les éditeurs de logiciels proposent souvent des réductions en fonction du nombre de licences utilisateurs, ce qui permet de réaliser des économies de 5 à 25%. Les versions d’essai sont par ailleurs souvent limitées dans le temps / dans leurs fonctionnalités.
 
-Conclusion: Les tests ont été effectués depuis Sonarquebe cloud.
+Conclusion: 
+
+Les tests ont été effectués depuis Sonarquebe cloud pour éviter les problèmes liés à l'organisme.
+Sonarquebe est un bon logiciel aide à bonne écriture du code et lisibles, avoir les bonnes pratiques qui vont permettre à mieux effectuer la maintenance ainsi la comprehension. 
 
 PARTIE CYPRESS
 
