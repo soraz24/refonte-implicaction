@@ -2,8 +2,11 @@ PARTIE I: SONARQUEBE
 
 SonarQube est un outil d’analyse statique qui a pour but de mesurer la qualité du code d’un applicatif. Pour un projet donné, il fournit des métriques portant sur la qualité du code et permet d’identifier précisément les points à corriger (code mort, bugs potentiels, non-respect des standards, manque ou surcharge de commentaires…) 
 SonarQube classe les défauts logiciels selon 3 catégories :
+
 •	Les bugs : anomalies évidentes du code. Ils impactent la fiabilité (reliability) de l’application.
+
 •	Les vulnérabilités : faiblesses du code pouvant nuire au système. Elles impactent la sécurité de l’application.
+
 •	Les « code smells » (mauvaises pratiques de conception logicielle qui conduisent à l’apparition de défauts). Ils impactent la maintenabilité de l’application.
 
 Pour la qualité du code projet Refonte-Implication, nous avons utilisé Sonarquebe sous windows. Dans cette partie, sera decrite les avantages, inconvenients et difficultés rencontrés lors du test ainsi que le coût s'il faut l'utiliser.
