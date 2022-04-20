@@ -40,63 +40,59 @@ Le tarif de SonarQube est de 0 euros par mois et par utilisateur (ce prix peut �
 Les éditeurs de logiciels proposent souvent des réductions en fonction du nombre de licences utilisateurs, ce qui permet de réaliser des économies de 5 à 25%. Les versions d’essai sont par ailleurs souvent limitées dans le temps / dans leurs fonctionnalités.
 
 Conclusion:
-
 Les tests ont été effectués depuis Sonarquebe cloud pour éviter les problèmes liés à l'organisme.
 Sonarquebe est un bon logiciel aide à bonne écriture du code et lisibles, avoir les bonnes pratiques qui vont permettre à mieux effectuer la maintenance ainsi la comprehension.
 
 
-PARTIE II CYPRESS
+PARTIE II: CYPRESS
 
-Cypress permet de vérifier que l’application fonctionne correctement et ainsi garantir la meilleure expérience utilisateur possible.
+Cypress est une application de test automatisée frontale créée pour le Web moderne. Cypress est construit sur une nouvelle architecture et s’exécute dans la même boucle d’exécution que l’application testée. En conséquence, Cypress fournit des tests meilleurs, plus rapides et plus fiables pour tout ce qui s’exécute dans un navigateur. Cypress fonctionne sur n’importe quel framework frontal ou site Web.
 
-Installation et configuration :
+Avantages
+- logiciel collaboratif et en ligne.
 
-npm install cypress --save-dev
+Principales caractéristiques : bibliothèque javascript framework routage intégré javascript mvc modèle mvc développement web outils de développement html dynamique routage intégré développement javascript bibliothèque javascript système modulaire framework ui interface utilisateur développement web mappage d’arguments.
 
-Une fois l’installation terminée, on ajoute une commande dans le champ scripts du package.json.
-{
-"scripts": {
-"cypress: "cypress open"
-},
-}
+Voici les principales fonctionnalités et spécifications de cette application :
+- Assistance
+- Support technique en ligne
+- Cypress peut se connecter à d’autres logiciels comme :Zapier
+- Cypress est un logiciel en mode SAAS (software as a service) : il est donc supporté par tous les systèmes d’exploitation (Windows, Mac, OS Mobiles …) car il est accessible depuis un navigateur web Internet (comme Chrome ou Firefox).
 
-on lance ensuite yarn cypress
+Coût:
 
-L’exécution du script yarn cypress n’a pas seulement généré des fichiers de tests, mais aussi une architecture placée à la racine du code de notre application.
+Le tarif de Cypress est de 0 euros par mois et par utilisateur (ce prix peut évoluer en fonction du nombre d’utilisateurs, d’options activées …)
+Les éditeurs de logiciels proposent souvent des réductions en fonction du nombre de licences utilisateurs, ce qui permet de réaliser des économies de 5 à 25%. Les versions d’essai sont par ailleurs souvent limitées dans le temps / dans leurs fonctionnalités
 
-.
-├── cypress
-│ ├── fixtures
-│ ├── integration
-│ ├── plugin
-│ └── support
-├── src
-│ └── ...
-├── cypress.json
-├── ...
+Voici les différents prix de Cypress
 
-Le fichier cypress.json est le fichier de configuration sur lequel Cypress va se baser pour faire les tests.
-on y ajoute notre url :
-{
-"baseUrl": "http://localhost:8081"
-}
+– Essai gratuit
+– Standard : 0,00 euros par utilisateur et par mois
+– Professionnel : –
+– Business : –
+– Entreprise : –
 
-il suffit ensuite de créer nos fichier de tests dans le dossier de Cypress cypress/integration
+Nos Tests avec Cypress: 
+Les tests effectués avec Cypress,nous ont permis de voir et evaluer la fiabilité, rapidité et l'éfficacité des tests.
 
-PARTIE JENKINS
+Conclusion: Effectuer les tests avec cypress est un gagne temps et permet à rendre l'interface de l'utilisateur accessible.
+
+
+PARTIE III: JENKINS
+
 Jenkins est un outil logiciel open source d’intégration continue développé en Java. Après une présentation du concept d’intégration continue, découvrez à quoi sert Jenkins, quels sont ses avantages et ses différences avec les autres outils similaires, ainsi que son fonctionnement.
 Configuration
 Fichier: Jenkinsfile
 Pluguin: maven integration, github integration, nodejs
-AVANTAGE
 
+AVANTAGE
 - Outil open source
 - Serveur d'automatisation robuste et facile à déployer. Rend possible mes flux d'automatisation des tests avec peu d'efforts et sans frais d'abonnement.
 - Nous apprécions surtout le fait qu'il s'agisse d'un logiciel open source bénéficiant d'un énorme soutien communautaire. Nous utilisons des plugins Jenkins pour déployer nos applications sur Azure, GCP et même Oracle Cloud. Il existe des plugins pour presque tous les outils utilisés. J'aime beaucoup le fait que vous pouvez exécuter des pipelines entièrement automatisés, planifiés ou exécutés avec des paramètres pour modifier les résultats en créant des scripts de type modèle.
   INCONVENIENTS
   
   
- PARTIE III K6
+ PARTIE IV: K6
 
 K6 est un qui se propose d’aider les développeurs à détecter des régressions de performance afin de construire des systèmes robustes.
 L’outil nous permet en outre de faire du smoke-testing, du load-testing, du stress-testing ou encore du soak-testing d’API.
@@ -131,12 +127,15 @@ Les tests de ce projet avec K6 ont été effectués sous windows apès l'install
 
 Problèmes Rencontrés
 
-les problèmes que nous avons rencontrés sont plutot liés au projet (lancement du projet et non à K6). Il a fallu créer un profile du projet sur Intelligi, aller dans le dossier plugin du projet > se prositioner sur sprint-boot:run pour excuter la partie back end du projet car la commande mvn spring-boot:run -Dspring-boot.run.profiles=local communiqué dans le readme du projet ne marche pas pour excuter le projet , il ya des erreurs suite au choix du profile par defaut dont certains variables d'environnement ne sont definis dans celui-ci.
+les problèmes que nous avons rencontrés sont plutot liés au projet (lancement du projet et non à K6). 
+1- Il a fallu créer un profile du projet sur Intelligi, aller dans le dossier plugin du projet > se prositioner sur sprint-boot:run pour excuter la partie back end du projet car la commande mvn spring-boot:run -Dspring-boot.run.profiles=local communiqué dans le readme du projet ne marche pas pour excuter le projet , il ya des erreurs suite au choix du profile par defaut dont certains variables d'environnement ne sont definis dans celui-ci.
+
+2- En se connectant depuis le site web avec les identifiants de l'utilisateur mis dans le test K6, nous avons un token et l'utilisateur est connecté, par contre
+en effectuant les tests K6, l'authentification se passe bien mais aucun Token n'est renvoyé, il ya plutôt une erreur 403. Même les tests effectué sur postman dans l'erreur 403 avec les mêmes valuers d'identifiants de l'utilisateurs.
+
 
 Conclusion:
 
 k6 est adapté aux besoins des entreprises : Logiciels PME 
-
 Cette application est conseillée pour les métiers : Logiciels Direction – Management 
-
 Ce progiciel cloud est utilisé dans les secteurs : Logiciels Généraliste 
