@@ -44,7 +44,8 @@ Conclusion:
 Les tests ont été effectués depuis Sonarquebe cloud pour éviter les problèmes liés à l'organisme.
 Sonarquebe est un bon logiciel aide à bonne écriture du code et lisibles, avoir les bonnes pratiques qui vont permettre à mieux effectuer la maintenance ainsi la comprehension.
 
-PARTIE CYPRESS
+
+PARTIE II CYPRESS
 
 Cypress permet de vérifier que l’application fonctionne correctement et ainsi garantir la meilleure expérience utilisateur possible.
 
@@ -93,21 +94,49 @@ AVANTAGE
 - Serveur d'automatisation robuste et facile à déployer. Rend possible mes flux d'automatisation des tests avec peu d'efforts et sans frais d'abonnement.
 - Nous apprécions surtout le fait qu'il s'agisse d'un logiciel open source bénéficiant d'un énorme soutien communautaire. Nous utilisons des plugins Jenkins pour déployer nos applications sur Azure, GCP et même Oracle Cloud. Il existe des plugins pour presque tous les outils utilisés. J'aime beaucoup le fait que vous pouvez exécuter des pipelines entièrement automatisés, planifiés ou exécutés avec des paramètres pour modifier les résultats en créant des scripts de type modèle.
   INCONVENIENTS
-- PARTIE K6
+  
+  
+ PARTIE III K6
 
 K6 est un qui se propose d’aider les développeurs à détecter des régressions de performance afin de construire des systèmes robustes.
 L’outil nous permet en outre de faire du smoke-testing, du load-testing, du stress-testing ou encore du soak-testing d’API.
 
 Caractéristiques et avantages
 
-- OPEN SOURCE
+- OPEN SOURCE (logiciel gratuit)
 - Mesurer la vitesse, la stabilité et la précision du site
 - Identifier les problèmes et les résoudre
 - Améliorer les capacités de chargement et d’optimisation du site web
 - Améliorer la qualité du code et la fonctionnalité du logiciel
 - Répondre aux attentes des utilisateur
-
 - Protocoles pris en charge : HTTP/1.1, HTTP/2, WebSocket, et plus encore.
 - Compatibilité : Fonctionne avec Mac OS, Linux et Windows.
 - Intégration : S’intègre à plus de 20 services, dont Kafka, Azure, GraphQL, Grafana, Datadog, GitLab, CircleCI, GitHub..
-- Prix : Il propose un essai gratuit pour 50 tests, tandis que les plans payants commencent à 59 $ par mois pour 200 utilisateurs et 1200 tests par an.
+
+Coûts:
+
+Le prix de k6 est de 0 € par mois et par utilisateur mais ce tarif est susceptible d’évoluer car différentes options sont proposées par l’éditeur de ce logiciel SaaS afin de répondre aux besoins de ses utilisateurs : nombre de licences, fonctions supplémentaires, add-ons … 
+Il propose un essai gratuit pour 50 tests, tandis que les plans payants commencent à 59 $ par mois pour 200 utilisateurs et 1200 tests par an.
+
+Voici les différents tarifs de k6 (pricing / forfaits) :
+– Essai gratuit : 0 € (limité dans le temps / dans les fonctionnalités)
+– Standard : 0 € / mois / utilisateur
+– Pro : –
+– Entreprise : –
+– Premium : –
+
+Nos Tests K6 effectuées sur ce projet:  
+
+Les tests de ce projet avec K6 ont été effectués sous windows apès l'installation du septup de K6 telecharger  sur internet (IL est également possible de faire avec la commande winget install k6).Au total 9 tests ont été effectués pour tester la robustesse, performence ,vitesse et stabilité du projet( ces tetsts sont retrouvés dans le dossier K6-Test à la racine du projet)
+
+Problèmes Rencontrés
+
+les problèmes que nous avons rencontrés sont plutot liés au projet (lancement du projet et non à K6). Il a fallu créer un profile du projet sur Intelligi, aller dans le dossier plugin du projet > se prositioner sur sprint-boot:run pour excuter la partie back end du projet car la commande mvn spring-boot:run -Dspring-boot.run.profiles=local communiqué dans le readme du projet ne marche pas pour excuter le projet , il ya des erreurs suite au choix du profile par defaut dont certains variables d'environnement ne sont definis dans celui-ci.
+
+Conclusion:
+
+k6 est adapté aux besoins des entreprises : Logiciels PME 
+
+Cette application est conseillée pour les métiers : Logiciels Direction – Management 
+
+Ce progiciel cloud est utilisé dans les secteurs : Logiciels Généraliste 
