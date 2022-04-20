@@ -98,11 +98,16 @@ AVANTAGE
 K6 est un qui se propose d’aider les développeurs à détecter des régressions de performance afin de construire des systèmes robustes.
 L’outil nous permet en outre de faire du smoke-testing, du load-testing, du stress-testing ou encore du soak-testing d’API.
 
-AVANTAGES
+Caractéristiques et avantages
 
 - OPEN SOURCE
 - Mesurer la vitesse, la stabilité et la précision du site
 - Identifier les problèmes et les résoudre
 - Améliorer les capacités de chargement et d’optimisation du site web
 - Améliorer la qualité du code et la fonctionnalité du logiciel
-- Répondre aux attentes des utilisateurs
+- Répondre aux attentes des utilisateur
+
+- Protocoles pris en charge : HTTP/1.1, HTTP/2, WebSocket, et plus encore.
+- Compatibilité : Fonctionne avec Mac OS, Linux et Windows.
+- Intégration : S’intègre à plus de 20 services, dont Kafka, Azure, GraphQL, Grafana, Datadog, GitLab, CircleCI, GitHub..
+- Prix : Il propose un essai gratuit pour 50 tests, tandis que les plans payants commencent à 59 $ par mois pour 200 utilisateurs et 1200 tests par an.
