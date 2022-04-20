@@ -101,9 +101,8 @@ L’outil nous permet en outre de faire du smoke-testing, du load-testing, du st
 AVANTAGES
 
 -OPEN SOURCE
-
-- Mesurer la vitesse, la stabilité et la précision du site
-  -Identifier les problèmes et les résoudre
-  -Améliorer les capacités de chargement et d’optimisation du site web
-  -Améliorer la qualité du code et la fonctionnalité du logiciel
-  -Répondre aux attentes des utilisateurs
+-Mesurer la vitesse, la stabilité et la précision du site
+-Identifier les problèmes et les résoudre
+-Améliorer les capacités de chargement et d’optimisation du site web
+-Améliorer la qualité du code et la fonctionnalité du logiciel
+-Répondre aux attentes des utilisateurs
