@@ -7,12 +7,7 @@ pipeline {
 		stages {
 				stage('Build') {
 						steps {
-								sh 'mvn -B -DskipTests clean package'
-						}
-				}
-				stage('Run') {
-						steps {
-								sh 'mvn spring-boot:run -Dspring-boot.run.profiles=local'
+								sh 'mvn -B -DskipTests clean package run'
 						}
 				}
 				stage('Test') { 
