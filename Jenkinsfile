@@ -10,6 +10,11 @@ pipeline {
 								sh 'mvn -B -DskipTests clean package'
 						}
 				}
+				stage('Run') {
+						steps {
+								sh 'mvn spring-boot:run -Dspring-boot.run.profiles=local'
+						}
+				}
 				stage('Test') { 
 						steps {
 								sh 'export TESTCONTAINERS_RYUK_DISABLED=true' 
