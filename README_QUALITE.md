@@ -86,7 +86,8 @@ Jenkins est un outil logiciel d’intégration continu. Il s’agit d’un logic
 Configuration de ce projet avec Jenkins
 
 Fichier: Jenkinsfile
-Pluguin: maven integration, github integration, nodejs
+Pluguin: maven integration, github integration, nodejs, sonarqube scanner
+Installation depuis le volume: docker, docker-compose, k6
 
 AVANTAGE
 
