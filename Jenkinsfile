@@ -24,11 +24,6 @@ pipeline {
 								sh'mvn test -Dspring.profiles.active=test -Dtest=WorkExperienceAdapterTest -DfailIfNoTests=false'
 						}
 				}
-				stage('Cypress e2e Tests') {
-						steps {
-								sh 'npm run cypress:ci''
-						}
-				}
 				stage('Performance Testing') {
 						steps {
 								echo 'Installing k6'
