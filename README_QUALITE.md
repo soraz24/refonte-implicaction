@@ -40,7 +40,7 @@ Le tarif de SonarQube est de 0 euros par mois et par utilisateur (ce prix peut �
 Les éditeurs de logiciels proposent souvent des réductions en fonction du nombre de licences utilisateurs, ce qui permet de réaliser des économies de 5 à 25%. Les versions d’essai sont par ailleurs souvent limitées dans le temps / dans leurs fonctionnalités.
 
 Conclusion:
-Les tests ont été effectués depuis Sonarquebe cloud pour éviter les problèmes liés à l'organisme.
+Les tests ont été effectués depuis Sonarquebe cloud (dans l'organisation créér dans le compte personnel github) pour éviter les problèmes liés à l'organisme.
 Sonarquebe est un bon logiciel aide à bonne écriture du code et lisibles, avoir les bonnes pratiques qui vont permettre à mieux effectuer la maintenance ainsi la comprehension.
 
 
@@ -80,16 +80,36 @@ Conclusion: Effectuer les tests avec cypress est un gagne temps et permet à ren
 
 PARTIE III: JENKINS
 
-Jenkins est un outil logiciel open source d’intégration continue développé en Java. Après une présentation du concept d’intégration continue, découvrez à quoi sert Jenkins, quels sont ses avantages et ses différences avec les autres outils similaires, ainsi que son fonctionnement.
-Configuration
+Jenkins est un outil logiciel d’intégration continu. Il s’agit d’un logiciel open source, développé à l’aide du langage de programmation Java. Il permet de tester et de rapporter les changements effectués sur une large base de code en temps réel. En utilisant ce logiciel, les développeurs peuvent détecter et résoudre les problèmes dans une base de code et rapidement. Ainsi les tests de nouveaux builds peuvent être automatisés, ce qui permet d’intégrer plus facilement des changements à un projet, de façon continue. L’objectif de Jenkin est en effet d’accélérer le développement de logiciels par le biais de l’automatisation. Jenkins permet l’intégration de toutes les étapes du cycle de développement.
+
+
+Configuration de ce projet avec Jenkins
+
 Fichier: Jenkinsfile
 Pluguin: maven integration, github integration, nodejs
 
 AVANTAGE
-- Outil open source
-- Serveur d'automatisation robuste et facile à déployer. Rend possible mes flux d'automatisation des tests avec peu d'efforts et sans frais d'abonnement.
-- Nous apprécions surtout le fait qu'il s'agisse d'un logiciel open source bénéficiant d'un énorme soutien communautaire. Nous utilisons des plugins Jenkins pour déployer nos applications sur Azure, GCP et même Oracle Cloud. Il existe des plugins pour presque tous les outils utilisés. J'aime beaucoup le fait que vous pouvez exécuter des pipelines entièrement automatisés, planifiés ou exécutés avec des paramètres pour modifier les résultats en créant des scripts de type modèle.
-  INCONVENIENTS
+
+ - open source fédérant une vaste communauté proposant sans cesse de nouvelles améliorations et autres perfectionnements. 
+-  Le logiciel est facile à installer, et plus de 1000 plugins sont disponibles. Si un plugin correspondant à vos besoins n’existe pas, vous pouvez le créer vous-même et le partager avec la communauté. 
+-  Autre avantage : Jenkins est également gratuit. Enfin, en tant qu’outil développé avec Java, il peut être porté sur toutes les principales plateformes logicielles.
+-  Compatible avec les systèmes Windows, Linus, Mac,IOS...
+
+Nombre total de fonctionnalités pour Jenkins : 13
+
+ - API
+ - Authentification
+-  Contrôles/Permissions d'accès
+-  Déploiement continu      -   Gestion de versions
+- Gestion des applications  -  Gestion des pipelines
+-  Gestion des tests        - Gestion des tests de logiciels
+- Livraison continue        - Monitoring
+- Projections               - Tableau de bord d'activités
+
+ Coût: Jenkins est gratuit, elle coute 0,00€ par utilisateur.
+ 
+ Conclusion: Jenkins est un bon outil pour les developpeurs car, il facilite la vie au niveau des tests par l'automatimatisation et c'est rapide.En plus de celà ,elle permet plusieurs fonctionnalités qui peuvent etre utiles au besoin de chacun des utilisateurs l'utilisant.
+ 
   
   
  PARTIE IV: K6
